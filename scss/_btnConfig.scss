@@ -2,15 +2,16 @@
 @import "utilities";
 @import "config";
 
+@media (max-width: 600px) {
+  %btn {
+   display: inline-block;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 3px;
 
-%btn {
-  display: inline-block;
-  border-radius: 5px;
-  padding: 8px 20px;
-  margin: 3px;
-
-  &:hover {
-    transform: scale(.80);
+    &:hover {
+      transform: scale(.80);
+    }
   }
 }
 

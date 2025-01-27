@@ -1,6 +1,6 @@
-@import "btnConfig";
-@import "utilities";
-@import "config";
+@import "path/to/btnConfig";
+@import "path/to/utilities";
+@import "path/to/config";
 
 * {
   box-sizing: border-box;
@@ -30,18 +30,21 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
 
     ul {
       display: flex;
-      list-style-type: none;
+      list-style: none;
+      gap: 15px;
     }
 
     li {
-      padding: 15px;
+      padding: 5px 15px;
     }
 
     a {
       color: text-color-picker($primary-color);
+      font-weight: bold;
     }
 
     a:hover {
